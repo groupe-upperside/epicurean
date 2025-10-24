@@ -135,6 +135,15 @@ export default function Navigation() {
                             {t('Presse.translation.content')}
                         </Link>
                         <Link
+                            href={`/${locale}/join-us`}
+                            className={`block py-2 text-base uppercase tracking-wider transition-colors ${
+                                isScrolled ? 'text-brown-900 hover:text-gold-600' : 'text-white hover:text-gold-300'
+                            }`}
+                            onClick={() => setIsOpen(false)}
+                        >
+                            {t('JoinUs.translation.content')}
+                        </Link>
+                        <Link
                             href={`/${locale}/contact`}
                             className={`block py-2 text-base uppercase tracking-wider transition-colors ${
                                 isScrolled ? 'text-brown-900 hover:text-gold-600' : 'text-white hover:text-gold-300'
