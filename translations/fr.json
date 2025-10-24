@@ -1,0 +1,1350 @@
+{
+  "Nav": {
+    "LeGroupe": {
+      "term": "nav.leGroupe",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Le Groupe",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "nav",
+      "tags": [],
+      "comment": ""
+    },
+    "Presse": {
+      "term": "nav.presse",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Presse",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "nav",
+      "tags": [],
+      "comment": ""
+    },
+    "Contact": {
+      "term": "nav.contact",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Contact",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "nav",
+      "tags": [],
+      "comment": ""
+    },
+    "JoinUs": {
+      "term": "nav.joinUs",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Nous rejoindre",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "nav",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "Home": {
+    "HeroTitle": {
+      "term": "home.heroTitle",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Élégance Épicurean Group",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home",
+      "tags": [],
+      "comment": ""
+    },
+    "HeroSubtitle": {
+      "term": "home.heroSubtitle",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "est une invitation à redécouvrir un art de vivre raffiné, voluptueux, bienveillant. Loin des carcans du temps, celui d'un éternel été où chaque détail compte.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home",
+      "tags": [],
+      "comment": ""
+    },
+    "IntroText": {
+      "term": "home.introText",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "est une invitation à redécouvrir un art de vivre raffiné, subtil, généreux, intemporel, dans un univers où chaque détail compte et chaque instant se savoure.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "HomeStats": {
+    "Maisons": {
+      "term": "home.stats.maisons",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Maisons",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.stats",
+      "tags": [],
+      "comment": ""
+    },
+    "EtoileMichelin": {
+      "term": "home.stats.etoileMichelin",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Étoile Michelin",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.stats",
+      "tags": [],
+      "comment": ""
+    },
+    "Chefs": {
+      "term": "home.stats.chefs",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Chefs",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.stats",
+      "tags": [],
+      "comment": ""
+    },
+    "Villes": {
+      "term": "home.stats.villes",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Villes",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.stats",
+      "tags": [],
+      "comment": ""
+    },
+    "Is": {
+      "term": "home.stats.is",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "C'est ...",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.stats",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "HomePromise": {
+    "Title": {
+      "term": "home.promise.title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "La promesse d'expériences inoubliables.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.promise",
+      "tags": [],
+      "comment": ""
+    },
+    "Subtitle": {
+      "term": "home.promise.subtitle",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "L'ADN du beau et du bon !",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.promise",
+      "tags": [],
+      "comment": ""
+    },
+    "Section1Title": {
+      "term": "home.promise.section1Title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Un duo complémentaire",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.promise",
+      "tags": [],
+      "comment": ""
+    },
+    "Section1Text": {
+      "term": "home.promise.section1Text",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Une complicité évidente qui unie Olivia et Philippe Veran. Deux expertises distinctes et deux entrepreneurs qui au fil des années se sont combinées pour créer ensemble un monde sourire et proposer des lieux uniques de bien-être et d'évasion.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.promise",
+      "tags": [],
+      "comment": ""
+    },
+    "Section2Title": {
+      "term": "home.promise.section2Title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Un concept unique",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.promise",
+      "tags": [],
+      "comment": ""
+    },
+    "Section2Text": {
+      "term": "home.promise.section2Text",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Ensemble nous voulons proposer plus de 3000 m² de bonheur, d'expériences et d'volupté. Chaque chambre est imaginée pour faire voyager les hôtes. L'offre de restauration, de pâtisserie pourra être complétée et aidée par nos chefs français pour là encore proposer une expérience unique.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.promise",
+      "tags": [],
+      "comment": ""
+    },
+    "Section3Title": {
+      "term": "home.promise.section3Title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "2 chefs incontournables",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.promise",
+      "tags": [],
+      "comment": ""
+    },
+    "Section3Text": {
+      "term": "home.promise.section3Text",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Yazid Ichemrahen, Champion du monde de pâtisserie, un génie au talent pur. Une histoire personnelle qui forge son goût de l'effort, un vir-tuose du détail, des saveurs qui vous transportent. Alexandre Lechêne génie de la cuisine, du travail bien fait, un amoureux du produit. Chef étoilé l'étoile, venu de Saint-Véran.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.promise",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "HomeVillaSalone": {
+    "Title": {
+      "term": "home.villaSalone.title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Villa Salone",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.villaSalone",
+      "tags": [],
+      "comment": ""
+    },
+    "Subtitle": {
+      "term": "home.villaSalone.subtitle",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "La Villa Salone",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.villaSalone",
+      "tags": [],
+      "comment": ""
+    },
+    "Description1": {
+      "term": "home.villaSalone.description1",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "est un restaurant gastronomique, avec plusieurs possibilités de dégustation où se déploie tout le talent de notre Chef Alexandre Lechêne.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.villaSalone",
+      "tags": [],
+      "comment": ""
+    },
+    "Description2": {
+      "term": "home.villaSalone.description2",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Nous proposons aussi un format bistrot Atelier Salone. Sa carte simple et raffinée vous offre un délicieux moment, accessible et suffisamment rapide pour une pause déjeuner, un repas d'affaire ou un moment familial et amical.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.villaSalone",
+      "tags": [],
+      "comment": ""
+    },
+    "Cta": {
+      "term": "home.villaSalone.cta",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Découvrir",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.villaSalone",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "HomeHotellerieHaute": {
+    "Title": {
+      "term": "home.hotellerieHaute.title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Hôtellerie saluée",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.hotellerieHaute",
+      "tags": [],
+      "comment": ""
+    },
+    "Description": {
+      "term": "home.hotellerieHaute.description",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Nos 250 hôtels 5* répartis en Italie et France, ainsi que nos hôtels 4* étoiles éléments 5* situés dans le centre des villes les plus prestigieuses et dans les endroits les plus paradisiaques au monde.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.hotellerieHaute",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "HomeLecuver": {
+    "Title": {
+      "term": "home.lecuver.title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "sl lecuver",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.lecuver",
+      "tags": [],
+      "comment": ""
+    },
+    "Description": {
+      "term": "home.lecuver.description",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Le terroir, on retrouve un démarrage sur les toits et les terres, des vins rares qui célèbrent l'histoire gastronomique régionale, enrichie d'une passion pour les saveurs authentiques.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.lecuver",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "HomeAlvaoult": {
+    "Title": {
+      "term": "home.alvaoult.title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Alvaoult",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.alvaoult",
+      "tags": [],
+      "comment": ""
+    },
+    "Description": {
+      "term": "home.alvaoult.description",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Imaginez un centre-ville où une maison familiale combine authenticité et modernité. Chaque bouchée raconte une histoire, chaque plat évoque un souvenir lié à cette cuisine généreuse et réconfortante.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.alvaoult",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "HomeHotelSpalato": {
+    "Title": {
+      "term": "home.hotelSpalato.title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Hôtel Spalato",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.hotelSpalato",
+      "tags": [],
+      "comment": ""
+    },
+    "Description": {
+      "term": "home.hotelSpalato.description",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Au cœur de Split, un hôtel où l'ancien rencontre le moderne. Un lieu où le charme méditerranéen s'allie à un design contemporain sophistiqué. Une adresse confidentielle où chaque séjour devient un voyage...",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.hotelSpalato",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "Footer": {
+    "Copyright": {
+      "term": "footer.copyright",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "© Élégance Épicurean Group 2025. Tous droits réservés.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "footer",
+      "tags": [],
+      "comment": ""
+    },
+    "LegalNotice": {
+      "term": "footer.legalNotice",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Mentions légales",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "footer",
+      "tags": [],
+      "comment": ""
+    },
+    "Privacy": {
+      "term": "footer.privacy",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Politique de confidentialité",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "footer",
+      "tags": [],
+      "comment": ""
+    },
+    "Terms": {
+      "term": "footer.terms",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Conditions d'utilisation",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "footer",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "HomeHomeTrattoria": {
+    "Title": {
+      "term": "home.homeTrattoria.title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Trattoria salone",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.homeTrattoria",
+      "tags": [],
+      "comment": ""
+    },
+    "Description": {
+      "term": "home.homeTrattoria.description",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Au cœur de Salon-de-Provence, sur la célèbre place de la Fontaine Moussue vous attend toute l’équipe de la Trattoria Salone. Un bistrot italien signé par le Chef Alexandre Lechêne, Chef étoilé à la Villa Salone. C’est lui qui réalise la Carte qui vous est proposée au gré de ses envies et des Saisons.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.homeTrattoria",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "HomeAtHome": {
+    "Title": {
+      "term": "home.atHome.title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "At home",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.atHome",
+      "tags": [],
+      "comment": ""
+    },
+    "Description": {
+      "term": "home.atHome.description",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Un lieu, une expérience… se retrouver chez le chef pâtissier. Une carte simple, pleine de saveurs pour des déjeuners, des goûters, des brunchs, des afterworks, des cocktails dans une ambiance feutrée. Ouverture Septembre 2025",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.atHome",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "HomePeysson": {
+    "Title": {
+      "term": "home.peysson.title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Peysson créations",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.peysson",
+      "tags": [],
+      "comment": ""
+    },
+    "Description": {
+      "term": "home.peysson.description",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Peysson Créations — menuiserie & boiserie d’art à Aubagne (13) — imagine, fabrique et pose sur mesure portes, fenêtres, volets et agencements, du neuf à la restauration patrimoniale, dans une élégante sobriété.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.peysson",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "HomeAtWork": {
+    "Title": {
+      "term": "home.atWork.title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "At work",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.atWork",
+      "tags": [],
+      "comment": ""
+    },
+    "Description": {
+      "term": "home.atWork.description",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Un atelier de création déjà ouvert avec le chef Yazid Ichemrahen. La simplicité d’un goût authentique, rendue possible par l’utilisation exclusive de matières premières d’exception sans les dénaturer. L’envie de faire découvrir à tous mon univers, de se remémorer les goûts oubliés de l’enfance, de créer une émotion.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.atWork",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "HomeRiad": {
+    "Title": {
+      "term": "home.riad.title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Riad Nashira",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.riad",
+      "tags": [],
+      "comment": ""
+    },
+    "Description": {
+      "term": "home.riad.description",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Une aventure différente dans un lieu enchanteur au milieu de la Medina à Marrakech. Un Riad de16 chambres qui va se transformer en 17 chambres avec de nombreuses nouveautés : Bar sur le rooftop, Restaurant de grillades sur le même toit, espaces dédiés aux réunions, création d’une salle de sport sur le toit. L’idée est de créer un lieu unique en son genre sans le cœur même de la ville.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "home.riad",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "Press": {
+    "Title": {
+      "term": "press.title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Presse",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "press",
+      "tags": [],
+      "comment": ""
+    },
+    "Subtitle": {
+      "term": "press.subtitle",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "On parle de nous !",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "press",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "JoinUs": {
+    "Title": {
+      "term": "joinUs.title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Nous rejoindre",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsLocation": {
+      "term": "joinUs.labelsLocation",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Localisation",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsRole": {
+      "term": "joinUs.labelsRole",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Métier",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsLastName": {
+      "term": "joinUs.labelsLastName",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Nom",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsFirstName": {
+      "term": "joinUs.labelsFirstName",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Prénom",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsEmail": {
+      "term": "joinUs.labelsEmail",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Email",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsPhone": {
+      "term": "joinUs.labelsPhone",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Téléphone",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsSubject": {
+      "term": "joinUs.labelsSubject",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Objet de votre candidature",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsMessage": {
+      "term": "joinUs.labelsMessage",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Message",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsSubmit": {
+      "term": "joinUs.labelsSubmit",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "ENVOYER",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsCV": {
+      "term": "joinUs.labelsCV",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "CV",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsCoverLetter": {
+      "term": "joinUs.labelsCoverLetter",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Lettre de motivation",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsFilePlaceholder": {
+      "term": "joinUs.labelsFilePlaceholder",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Cliquer pour choisir un fichier",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "OptionsLocationSalon": {
+      "term": "joinUs.optionsLocationSalon",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Salon de Provence",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "OptionsLocationParis": {
+      "term": "joinUs.optionsLocationParis",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Paris",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "OptionsLocationMarrakech": {
+      "term": "joinUs.optionsLocationMarrakech",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Marrakech",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "OptionsRoleCuisine": {
+      "term": "joinUs.optionsRoleCuisine",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Cuisine",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "OptionsRoleSalle": {
+      "term": "joinUs.optionsRoleSalle",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Salle",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "OptionsRoleService": {
+      "term": "joinUs.optionsRoleService",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Service",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "OptionsRoleHotellerie": {
+      "term": "joinUs.optionsRoleHotellerie",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Hôtellerie",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "OptionsRoleSupport": {
+      "term": "joinUs.optionsRoleSupport",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Fonctions supports",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "OptionsRoleMagasins": {
+      "term": "joinUs.optionsRoleMagasins",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Magasins",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "OptionsRoleArtistes": {
+      "term": "joinUs.optionsRoleArtistes",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Artistes",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "OptionsRoleAutre": {
+      "term": "joinUs.optionsRoleAutre",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Autre",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    },
+    "Subtitle": {
+      "term": "joinUs.subtitle",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Vous souhaitez rejoindre l'équipe ?",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "joinUs",
+      "tags": [],
+      "comment": ""
+    }
+  },
+  "Contact": {
+    "LabelsLastNameTranslationContent": {
+      "term": "contact.LabelsLastName.translation.content",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Nom",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "contact",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsFirstNameTranslationContent": {
+      "term": "contact.LabelsFirstName.translation.content",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Prénom",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "contact",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsEmailTranslationContent": {
+      "term": "contact.LabelsEmail.translation.content",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Email",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "contact",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsSubjectTranslationContent": {
+      "term": "contact.LabelsSubject.translation.content",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Sujet",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "contact",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsMessageTranslationContent": {
+      "term": "contact.LabelsMessage.translation.content",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Message",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "contact",
+      "tags": [],
+      "comment": ""
+    },
+    "LabelsSubmitTranslationContent": {
+      "term": "contact.LabelsSubmit.translation.content",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "ENVOYER",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "contact",
+      "tags": [],
+      "comment": ""
+    },
+    "Title": {
+      "term": "contact.title",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "Contact",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "contact",
+      "tags": [],
+      "comment": ""
+    },
+    "Subtitle": {
+      "term": "contact.subtitle",
+      "context": "",
+      "plural": "",
+      "created": "",
+      "updated": "",
+      "translation": {
+        "content": "N'hésitez pas à nous contacter pour toute autre question.",
+        "fuzzy": 0,
+        "proofread": 0,
+        "updated": ""
+      },
+      "reference": "contact",
+      "tags": [],
+      "comment": ""
+    }
+  }
+}
