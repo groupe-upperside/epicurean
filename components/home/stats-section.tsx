@@ -48,7 +48,7 @@ export default function Stats() {
                             className="object-cover"
                         />
                     </div>
-                </div>
+                </div> 
             </Container>
         </section>
     );
