@@ -36,7 +36,6 @@ export async function loadMessagesFromDisk(locale: string) {
         const extra = JSON.parse(rawExtra) as Record<string, unknown>;
         return deepMerge(base, extra) as Record<string, unknown>;
     } catch {
-        // No extra file; fall back to base
         return base;
     }
 }
