@@ -34,7 +34,13 @@ export const metadata: Metadata = {
 
 async function getMessages(locale: string) {
     try {
-        return (await import(`../../translations/${locale}.json`)).default;
+        const base = (await import(`../../translations/${locale}.json`)).default;
+        try {
+            const extra = (await import(`../../translations/${locale}.legal.json`)).default;
+            return { ...base, ...extra };
+        } catch {
+            return base;
+        }
     } catch {
         return notFound();
     }

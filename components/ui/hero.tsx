@@ -8,20 +8,32 @@ export default function Hero() {
 
     const slides = [
         {
-            image: process.env.NEXT_PUBLIC_CDN_URL + "Rectangle 6.png",
+            image: process.env.NEXT_PUBLIC_CDN_URL + "patio.jpeg",
         },
         {
-            image: process.env.NEXT_PUBLIC_CDN_URL + "Rectangle 6-1.png",
+            image: process.env.NEXT_PUBLIC_CDN_URL + "Zp5UWh5LeNNTxWv-_IMAGESLIDERYAZID1.avif",
         },
         {
-            image: process.env.NEXT_PUBLIC_CDN_URL + "Rectangle 7.png",
+            image: process.env.NEXT_PUBLIC_CDN_URL + "pool.jpeg",
+        },
+        {
+            image: process.env.NEXT_PUBLIC_CDN_URL + "Zp5UYx5LeNNTxWwJ_IMAGESLIDERYAZID9.avif",
+        },
+        {
+            image: process.env.NEXT_PUBLIC_CDN_URL + "rooftop.jpeg",
+        },
+        {
+            image: process.env.NEXT_PUBLIC_CDN_URL + "Zp5UXx5LeNNTxWwE_IMAGESLIDERYAZID5.avif",
         },
         {
             image: process.env.NEXT_PUBLIC_CDN_URL + "Rectangle 8.png",
         },
         {
-            image: process.env.NEXT_PUBLIC_CDN_URL + "Rectangle 9.png",
-        }
+            image: process.env.NEXT_PUBLIC_CDN_URL + "room.jpeg",
+        },
+        {
+            image: process.env.NEXT_PUBLIC_CDN_URL + "Zp5UYB5LeNNTxWwF_IMAGESLIDERYAZID6.avif",
+        },
     ];
 
     useEffect(() => {
@@ -37,7 +49,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative h-[50vh] w-full overflow-hidden">
+        <section className="relative h-[55vh] w-full overflow-hidden">
             {slides.map((slide, index) => (
                 <div
                     key={index}

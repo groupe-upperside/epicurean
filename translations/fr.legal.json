@@ -1,0 +1,19 @@
+{
+  "Common": {
+    "ToastMessageSent": {
+      "translation": {
+        "content": "message envoyé"
+      }
+    },
+    "ToastError": {
+      "translation": {
+        "content": "Une erreur est survenue. Veuillez réessayer."
+      }
+    },
+    "ToastFillRequired": {
+      "translation": {
+        "content": "Veuillez remplir tous les champs obligatoires."
+      }
+    }
+  }
+}

@@ -72,6 +72,15 @@ export default function PromiseSection() {
                                 {t('Section3Text.translation.content')}
                             </p>
                         </div>
+
+                        <div>
+                            <h3 className="mb-2 font-bold text-lg md:text-xl text-brown-900">
+                                {t('Section4Title.translation.content')}
+                            </h3>
+                            <p className="text-base md:text-lg leading-relaxed text-brown-800">
+                                {t('Section4Text.translation.content')}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

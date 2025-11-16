@@ -29,7 +29,7 @@ export default function FeaturesSection() {
                         alt: t('Title.translation.content'),
                     }}
                     smallImage={{
-                        src: `${process.env.NEXT_PUBLIC_CDN_URL}Rectangle 15.png`,
+                        src: `${process.env.NEXT_PUBLIC_CDN_URL}PHOTO-VILLA-SALONE-7.webp`,
                         alt: `${t('Title.translation.content')} detail`,
                     }}
                     imageOn="left"
@@ -125,7 +125,7 @@ export default function FeaturesSection() {
                         alt: tRiad('Title.translation.content'),
                     }}
                     smallImage={{
-                        src: `${process.env.NEXT_PUBLIC_CDN_URL}Rectangle 19.png`,
+                        src: `${process.env.NEXT_PUBLIC_CDN_URL}1E8BFEAC-809D-4758-98D9-66FC7DBDA3B4_1_105_c.jpeg`,
                         alt: `${tRiad('Title.translation.content')} detail`,
                     }}
                     imageOn="left"

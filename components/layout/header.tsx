@@ -31,7 +31,7 @@ export default function Navigation() {
             isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
         }`}>
             <div className="mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-20 md:h-24">
+                <div className="flex items-center justify-between h-20 lg:h-24">
                     <Link href={`/${locale}`} className="flex items-center gap-3">
                         <Image
                             quality={100}
@@ -39,11 +39,11 @@ export default function Navigation() {
                             alt="Logo"
                             width={2746}
                             height={615}
-                            className="max-w-[200px] md:max-w-[250px]"
+                            className="max-w-[200px] lg:max-w-[250px]"
                         />
                     </Link>
 
-                    <div className="hidden md:flex items-center space-x-18">
+                    <div className="hidden lg:flex items-center space-x-18">
                         <Link
                             href={`/${locale}`}
                             className={`text-base font-medium uppercase tracking-wider transition-colors ${
@@ -98,7 +98,7 @@ export default function Navigation() {
 
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className={`md:hidden focus:outline-none transition-colors cursor-pointer ${
+                        className={`lg:hidden focus:outline-none transition-colors cursor-pointer ${
                             isScrolled ? 'text-brown-900' : 'text-white'
                         }`}
                     >
@@ -114,7 +114,7 @@ export default function Navigation() {
             </div>
 
             {isOpen && (
-                <div className={`md:hidden ${isScrolled ? 'bg-white' : 'bg-brown-950/98 backdrop-blur-sm'}`}>
+                <div className={`lg:hidden ${isScrolled ? 'bg-white' : 'bg-brown-950/98 backdrop-blur-sm'}`}>
                     <div className="px-4 pt-2 pb-4 space-y-3">
                         <Link
                             href={`/${locale}`}

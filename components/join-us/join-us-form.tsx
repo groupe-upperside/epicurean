@@ -1,23 +1,17 @@
 "use client";
 import * as React from "react";
 import {useTranslations} from "next-intl";
-
-/**
- * JoinUsForm (Next.js 15 + Tailwind v4)
- * ---------------------------------------------------------------
- * i18n: Uses `const t = useTranslations("JoinUs")` with FLAT, explicit keys like
- * t("LabelsLocation.translation.content"). No nested keys.
- */
+import toast from "react-hot-toast";
+import {cn} from "@/lib/utils/utils";
+import {FloatingTextarea} from "@/components/ui/text-area";
+import {FloatingInput} from "@/components/ui/input";
 
 export type Option = { value: string; label: string };
 
 export type JoinUsFormProps = {
-    action?: string; // e.g. "/api/join-us" (ignored if `formAction` is provided)
     method?: "POST" | "GET";
-    /** Next.js Server Action: you can pass an async function here */
     formAction?: (formData: FormData) => void | Promise<void>;
     className?: string;
-    /** Optional overrides on top of translations */
     labels?: {
         location?: string;
         role?: string;
@@ -32,7 +26,6 @@ export type JoinUsFormProps = {
         cover?: string;
         filePlaceholder?: string;
     };
-    /** If you want to override options entirely, pass them here. */
     locations?: Option[];
     roles?: Option[];
     defaultValues?: Partial<{
@@ -46,109 +39,6 @@ export type JoinUsFormProps = {
         message: string;
     }>;
 };
-
-function cn(...parts: Array<string | false | null | undefined>) {
-    return parts.filter(Boolean).join(" ");
-}
-
-function FloatingInput({
-                           id,
-                           name,
-                           type = "text",
-                           label,
-                           autoComplete,
-                           required,
-                           defaultValue,
-                       }: {
-    id: string;
-    name: string;
-    type?: string;
-    label: string;
-    autoComplete?: string;
-    required?: boolean;
-    defaultValue?: string;
-}) {
-    return (
-        <div className="relative">
-            <input
-                id={id}
-                name={name}
-                type={type}
-                autoComplete={autoComplete}
-                placeholder=" "
-                defaultValue={defaultValue}
-                required={required}
-                className={cn(
-                    "peer block w-full bg-transparent outline-none",
-                    "border-b border-brand-charcoal/40 focus:border-brand-charcoal",
-                    "py-3",
-                    "text-base text-brand-charcoal",
-                    "form-input"
-                )}
-            />
-            <label
-                htmlFor={id}
-                className={cn(
-                    "pointer-events-none absolute left-0 top-3 text-brand-gray transition-all",
-                    "peer-placeholder-shown:top-3 peer-placeholder-shown:text-base",
-                    "peer-focus:-top-3 peer-focus:text-xs peer-focus:tracking-wide peer-focus:text-brand-charcoal",
-                    "peer-not-placeholder-shown:-top-3 peer-not-placeholder-shown:text-xs",
-                    "form-label"
-                )}
-            >
-                {label}
-            </label>
-        </div>
-    );
-}
-
-function FloatingTextarea({
-                              id,
-                              name,
-                              label,
-                              rows = 1,
-                              required,
-                              defaultValue,
-                          }: {
-    id: string;
-    name: string;
-    label: string;
-    rows?: number;
-    required?: boolean;
-    defaultValue?: string;
-}) {
-    return (
-        <div className="relative">
-      <textarea
-          id={id}
-          name={name}
-          rows={rows}
-          placeholder=" "
-          defaultValue={defaultValue}
-          required={required}
-          className={cn(
-              "peer block w-full bg-transparent outline-none resize-none",
-              "border-b border-brand-charcoal/40 focus:border-brand-charcoal",
-              "py-3",
-              "text-base text-brand-charcoal",
-              "form-input"
-          )}
-      />
-            <label
-                htmlFor={id}
-                className={cn(
-                    "pointer-events-none absolute left-0 top-3 text-brand-gray transition-all",
-                    "peer-placeholder-shown:top-3 peer-placeholder-shown:text-base",
-                    "peer-focus:-top-3 peer-focus:text-xs peer-focus:tracking-wide peer-focus:text-brand-charcoal",
-                    "peer-not-placeholder-shown:-top-3 peer-not-placeholder-shown:text-xs",
-                    "form-label"
-                )}
-            >
-                {label}
-            </label>
-        </div>
-    );
-}
 
 function FloatingSelect({
                             id,
@@ -172,6 +62,10 @@ function FloatingSelect({
                 name={name}
                 required={required}
                 defaultValue={defaultValue}
+                data-has-value={defaultValue !== "" ? "true" : undefined}
+                onChange={(e) => {
+                    e.currentTarget.dataset.hasValue = e.currentTarget.value !== "" ? "true" : "";
+                }}
                 className={cn(
                     "peer block w-full bg-transparent outline-none appearance-none",
                     "border-b border-brand-charcoal/40 focus:border-brand-charcoal",
@@ -201,7 +95,7 @@ function FloatingSelect({
                 className={cn(
                     "pointer-events-none absolute left-0 top-3 text-brand-gray transition-all",
                     "peer-focus:-top-3 peer-focus:text-xs peer-focus:tracking-wide peer-focus:text-brand-charcoal",
-                    "peer-has-[option:checked:not([value=\"\"])]:-top-3 peer-has-[option:checked:not([value=\"\"])]:text-xs",
+                    "peer-data-[has-value=true]:-top-3 peer-data-[has-value=true]:text-xs",
                     "form-label"
                 )}
             >
@@ -247,7 +141,6 @@ function FilePicker({
 }
 
 export default function JoinUsForm({
-                                       action = "#",
                                        method = "POST",
                                        formAction,
                                        className,
@@ -257,6 +150,8 @@ export default function JoinUsForm({
                                        defaultValues,
                                    }: JoinUsFormProps) {
     const t = useTranslations("JoinUs");
+    const tCommon = useTranslations("Common");
+    const [submitting, setSubmitting] = React.useState(false);
 
     const L = {
         location: labels?.location ?? t("LabelsLocation.translation.content"),
@@ -292,14 +187,99 @@ export default function JoinUsForm({
             { value: "autre", label: t("OptionsRoleAutre.translation.content") },
         ];
 
+    async function fileToBase64(file: File): Promise<string> {
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => {
+                const result = reader.result as string;
+                const base64 = result.includes(',') ? result.split(',')[1] : result;
+                resolve(base64);
+            };
+            reader.onerror = () => reject(reader.error);
+            reader.readAsDataURL(file);
+        });
+    }
+
+    async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+        if (submitting) return;
+        const form = e.currentTarget;
+        const fd = new FormData(form);
+        // Validate required fields
+        const requiredFields = ['localisation','metier','nom','prenom','email','telephone','objet','message'];
+        const firstEmpty = requiredFields.find((f) => !String(fd.get(f) ?? '').trim());
+        if (firstEmpty) {
+            if (typeof form.reportValidity === 'function') {
+                form.reportValidity();
+            }
+            toast.error(tCommon('ToastFillRequired.translation.content'));
+            (form.querySelector(`[name="${firstEmpty}"]`) as HTMLElement | null)?.focus();
+            return;
+        }
+        setSubmitting(true);
+        try {
+            type Attachment = { ContentType: string; Filename: string; Base64Content: string };
+            const payload: {
+                localisation: string;
+                metier: string;
+                nom: string;
+                prenom: string;
+                email: string;
+                telephone: string;
+                objet: string;
+                message: string;
+                attachments: Attachment[];
+            } = {
+                localisation: fd.get('localisation') as string,
+                metier: fd.get('metier') as string,
+                nom: fd.get('nom') as string,
+                prenom: fd.get('prenom') as string,
+                email: fd.get('email') as string,
+                telephone: fd.get('telephone') as string,
+                objet: fd.get('objet') as string,
+                message: fd.get('message') as string,
+                attachments: [],
+            };
+            const cv = fd.get('cv') as File | null;
+            const motivation = fd.get('motivation') as File | null;
+            if (cv && cv.size > 0) {
+                payload.attachments.push({
+                    ContentType: cv.type || 'application/octet-stream',
+                    Filename: cv.name || 'cv',
+                    Base64Content: await fileToBase64(cv),
+                });
+            }
+            if (motivation && motivation.size > 0) {
+                payload.attachments.push({
+                    ContentType: motivation.type || 'application/octet-stream',
+                    Filename: motivation.name || 'cover',
+                    Base64Content: await fileToBase64(motivation),
+                });
+            }
+
+            const res = await fetch('/api/join-us', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload),
+            });
+            if (!res.ok) throw new Error('Failed');
+            toast.success(tCommon('ToastMessageSent.translation.content'));
+            form.reset();
+        } catch (err) {
+            toast.error(tCommon('ToastError.translation.content'));
+        } finally {
+            setSubmitting(false);
+        }
+    }
+
     return (
         <form
             id="join_us_form"
+            onSubmit={onSubmit}
             action={formAction as unknown as string}
             method={method}
             className={cn("space-y-10", className)}
         >
-            {/* Localisation / Métier */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10">
                 <FloatingSelect
                     id="localisation"
@@ -319,7 +299,6 @@ export default function JoinUsForm({
                 />
             </div>
 
-            {/* Nom / Prénom */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10">
                 <FloatingInput
                     id="nom"
@@ -339,7 +318,6 @@ export default function JoinUsForm({
                 />
             </div>
 
-            {/* Email / Téléphone */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10">
                 <FloatingInput
                     id="email"
@@ -361,7 +339,6 @@ export default function JoinUsForm({
                 />
             </div>
 
-            {/* Objet */}
             <FloatingInput
                 id="objet"
                 name="objet"
@@ -369,17 +346,16 @@ export default function JoinUsForm({
                 required
                 defaultValue={defaultValues?.objet}
             />
-
-            {/* Message */}
+            
             <FloatingTextarea
                 id="message"
                 name="message"
                 rows={1}
                 label={L.message}
+                required
                 defaultValue={defaultValues?.message}
             />
 
-            {/* Files */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10 text-left pt-2">
                 <FilePicker id="cv" name="cv" label={L.cv} placeholder={L.filePlaceholder} />
                 <FilePicker id="motivation" name="motivation" label={L.cover} placeholder={L.filePlaceholder} />
@@ -388,9 +364,11 @@ export default function JoinUsForm({
             <div className="pt-6 flex justify-center">
                 <button
                     type="submit"
+                    disabled={submitting}
                     className={cn(
                         "font-serif tracking-[0.2em] text-sm text-brand-charcoal",
-                        "hover:text-brand-gray transition-colors duration-300"
+                        "hover:text-brand-gray transition-colors duration-300",
+                        submitting && "opacity-50 cursor-not-allowed"
                     )}
                 >
                     {L.submit}

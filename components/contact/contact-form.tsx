@@ -1,8 +1,12 @@
+"use client";
 import * as React from "react";
 import {useTranslations} from "next-intl";
+import toast from "react-hot-toast";
+import {FloatingTextarea} from "@/components/ui/text-area";
+import {cn} from "@/lib/utils/utils";
+import {FloatingInput} from "@/components/ui/input";
 
 export type ContactFormProps = {
-    action?: string;
     method?: "POST" | "GET";
     formAction?: (formData: FormData) => void | Promise<void>;
     className?: string;
@@ -21,113 +25,9 @@ export type ContactFormProps = {
         sujet: string;
         message: string;
     }>;
-};
-
-function cn(...parts: Array<string | false | null | undefined>) {
-    return parts.filter(Boolean).join(" ");
-}
-
-function FloatingInput({
-                           id,
-                           name,
-                           type = "text",
-                           label,
-                           autoComplete,
-                           required,
-                           defaultValue,
-                       }: {
-    id: string;
-    name: string;
-    type?: string;
-    label: string;
-    autoComplete?: string;
-    required?: boolean;
-    defaultValue?: string;
-}) {
-    return (
-        <div className="relative">
-            <input
-                id={id}
-                name={name}
-                type={type}
-                autoComplete={autoComplete}
-                placeholder=" "
-                defaultValue={defaultValue}
-                required={required}
-                className={cn(
-                    "peer block w-full bg-transparent outline-none",
-                    "border-b border-brand-charcoal/40 focus:border-brand-charcoal",
-                    "py-3",
-                    "text-base text-brand-charcoal",
-                    "form-input"
-                )}
-            />
-            <label
-                htmlFor={id}
-                className={cn(
-                    "pointer-events-none absolute left-0 top-3 text-brand-gray transition-all",
-                    "peer-placeholder-shown:top-3 peer-placeholder-shown:text-base",
-                    "peer-focus:-top-3 peer-focus:text-xs peer-focus:tracking-wide peer-focus:text-brand-charcoal",
-                    "peer-not-placeholder-shown:-top-3 peer-not-placeholder-shown:text-xs",
-                    "form-label"
-                )}
-            >
-                {label}
-            </label>
-        </div>
-    );
-}
-
-function FloatingTextarea({
-                              id,
-                              name,
-                              label,
-                              rows = 1,
-                              required,
-                              defaultValue,
-                          }: {
-    id: string;
-    name: string;
-    label: string;
-    rows?: number;
-    required?: boolean;
-    defaultValue?: string;
-}) {
-    return (
-        <div className="relative">
-      <textarea
-          id={id}
-          name={name}
-          rows={rows}
-          placeholder=" "
-          defaultValue={defaultValue}
-          required={required}
-          className={cn(
-              "peer block w-full bg-transparent outline-none resize-none",
-              "border-b border-brand-charcoal/40 focus:border-brand-charcoal",
-              "py-3",
-              "text-base text-brand-charcoal",
-              "form-input"
-          )}
-      />
-            <label
-                htmlFor={id}
-                className={cn(
-                    "pointer-events-none absolute left-0 top-3 text-brand-gray transition-all",
-                    "peer-placeholder-shown:top-3 peer-placeholder-shown:text-base",
-                    "peer-focus:-top-3 peer-focus:text-xs peer-focus:tracking-wide peer-focus:text-brand-charcoal",
-                    "peer-not-placeholder-shown:-top-3 peer-not-placeholder-shown:text-xs",
-                    "form-label"
-                )}
-            >
-                {label}
-            </label>
-        </div>
-    );
 }
 
 export default function ContactForm({
-                                        action = "#",
                                         method = "POST",
                                         formAction,
                                         className,
@@ -135,6 +35,8 @@ export default function ContactForm({
                                         defaultValues,
                                     }: ContactFormProps) {
     const t = useTranslations("Contact");
+    const tCommon = useTranslations("Common");
+    const [submitting, setSubmitting] = React.useState(false);
 
     const L = {
         lastName: labels?.lastName ?? t("LabelsLastName.translation.content"),
@@ -145,9 +47,50 @@ export default function ContactForm({
         submit: labels?.submit ?? t("LabelsSubmit.translation.content"),
     };
 
+    async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+        e.preventDefault();
+        if (submitting) return;
+        const form = e.currentTarget;
+        const fd = new FormData(form);
+        const requiredFields = ['nom', 'prenom', 'email', 'sujet', 'message'];
+        const firstEmpty = requiredFields.find((f) => !String(fd.get(f) ?? '').trim());
+        if (firstEmpty) {
+            if (typeof form.reportValidity === 'function') {
+                form.reportValidity();
+            }
+            toast.error(tCommon('ToastFillRequired.translation.content'));
+            const el = form.querySelector(`[name="${firstEmpty}"]`) as HTMLElement | null;
+            el?.focus();
+            return;
+        }
+        setSubmitting(true);
+        try {
+            const payload = {
+                nom: fd.get('nom') as string,
+                prenom: fd.get('prenom') as string,
+                email: fd.get('email') as string,
+                sujet: fd.get('sujet') as string,
+                message: fd.get('message') as string,
+            };
+            const res = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload),
+            });
+            if (!res.ok) throw new Error('Failed');
+            toast.success(tCommon('ToastMessageSent.translation.content'));
+            form.reset();
+        } catch (err) {
+            toast.error(tCommon('ToastError.translation.content'));
+        } finally {
+            setSubmitting(false);
+        }
+    }
+
     return (
         <form
             id="contact_form"
+            onSubmit={onSubmit}
             action={formAction as unknown as string}
             method={method}
             className={cn("space-y-10", className)}
@@ -158,6 +101,7 @@ export default function ContactForm({
                     name="nom"
                     label={L.lastName}
                     autoComplete="family-name"
+                    required
                     defaultValue={defaultValues?.nom}
                 />
                 <FloatingInput
@@ -165,6 +109,7 @@ export default function ContactForm({
                     name="prenom"
                     label={L.firstName}
                     autoComplete="given-name"
+                    required
                     defaultValue={defaultValues?.prenom}
                 />
             </div>
@@ -175,6 +120,7 @@ export default function ContactForm({
                 type="email"
                 label={L.email}
                 autoComplete="email"
+                required
                 defaultValue={defaultValues?.email}
             />
 
@@ -182,6 +128,7 @@ export default function ContactForm({
                 id="sujet"
                 name="sujet"
                 label={L.subject}
+                required
                 defaultValue={defaultValues?.sujet}
             />
 
@@ -190,15 +137,18 @@ export default function ContactForm({
                 name="message"
                 rows={1}
                 label={L.message}
+                required
                 defaultValue={defaultValues?.message}
             />
 
             <div className="pt-6 w-full flex justify-center">
                 <button
                     type="submit"
+                    disabled={submitting}
                     className={cn(
                         "font-serif cursor-pointer tracking-[0.2em] text-sm text-brand-charcoal",
-                        "hover:text-brand-gray transition-colors duration-300"
+                        "hover:text-brand-gray transition-colors duration-300",
+                        submitting && "opacity-50 cursor-not-allowed"
                     )}
                 >
                     {L.submit}
