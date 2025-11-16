@@ -24,7 +24,7 @@ export default function Stats() {
                             className="font-bold">{tHome('HeroTitle.translation.content')}</span>, {t('Is.translation.content')}
                     </h2>
                 </div>
-                <div className="w-full px-4 sm:p-18 lg: bg-[#F7F4EF]">
+                <div className="w-full p-4 sm:p-18 lg: bg-[#F7F7F7]">
                     <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 md:gap-8 mb-12 md:mb-16">
                         {stats.map((stat, index) => (
                             <div key={index} className="bg-white p-8 md:p-10 text-center shadow-sm">
