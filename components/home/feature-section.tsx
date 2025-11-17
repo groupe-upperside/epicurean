@@ -25,7 +25,7 @@ export default function FeaturesSection() {
                         </>
                     }
                     mainImage={{
-                        src: `${process.env.NEXT_PUBLIC_CDN_URL}Rectangle 10.png`,
+                        src: `${process.env.NEXT_PUBLIC_CDN_URL}img_9431.png`,
                         alt: t('Title.translation.content'),
                     }}
                     smallImage={{
@@ -121,7 +121,7 @@ export default function FeaturesSection() {
                         </>
                     }
                     mainImage={{
-                        src: `${process.env.NEXT_PUBLIC_CDN_URL}Rectangle 14.png`,
+                        src: `${process.env.NEXT_PUBLIC_CDN_URL}09FC81E7-FFA3-4FC5-8650-A8279FA46003_1_105_c.jpeg`,
                         alt: tRiad('Title.translation.content'),
                     }}
                     smallImage={{
@@ -148,7 +148,7 @@ export default function FeaturesSection() {
                     alt: tRiad('Title.translation.content'),
                 }}
                 smallImage={{
-                    src: `${process.env.NEXT_PUBLIC_CDN_URL}image00002.jpeg`,
+                    src: `${process.env.NEXT_PUBLIC_CDN_URL}peysson.jpeg`,
                     alt: `${tRiad('Title.translation.content')} detail`,
                 }}
                 imageOn="right"
