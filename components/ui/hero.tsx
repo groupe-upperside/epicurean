@@ -35,6 +35,9 @@ export default function Hero() {
             image: process.env.NEXT_PUBLIC_CDN_URL + "room.jpeg",
         },
         {
+            image: process.env.NEXT_PUBLIC_CDN_URL + "FE84A8B2-B9D4-4980-837F-126347CB03CA_1_105_c.jpeg",
+        },
+        {
             image: process.env.NEXT_PUBLIC_CDN_URL + "Zp5UYB5LeNNTxWwF_IMAGESLIDERYAZID6.avif",
         },
     ];
