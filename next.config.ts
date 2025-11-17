@@ -7,8 +7,8 @@ const withNextIntl = createNextIntlPlugin('./lib/i18n/i18n.ts')
 
 const nextConfig: NextConfig = {
     images: {
-        formats: ['image/webp', 'image/avif'],
         unoptimized: true,
+        qualities: [100],
         remotePatterns: [
             {
                 protocol: 'https',

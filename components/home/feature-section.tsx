@@ -77,7 +77,7 @@ export default function FeaturesSection() {
                         alt: tAtHome('Title.translation.content'),
                     }}
                     smallImage={{
-                        src: `${process.env.NEXT_PUBLIC_CDN_URL}Rectangle 17.png`,
+                        src: `${process.env.NEXT_PUBLIC_CDN_URL}Rectangle 18.png`,
                         alt: `${tAtHome('Title.translation.content')} detail`,
                     }}
                     imageOn="left"
@@ -101,7 +101,7 @@ export default function FeaturesSection() {
                         alt: tAtWork('Title.translation.content'),
                     }}
                     smallImage={{
-                        src: `${process.env.NEXT_PUBLIC_CDN_URL}Rectangle 18.png`,
+                        src: `${process.env.NEXT_PUBLIC_CDN_URL}Rectangle 17.png`,
                         alt: `${tAtWork('Title.translation.content')} detail`,
                     }}
                     imageOn="right"

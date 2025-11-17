@@ -8,7 +8,10 @@ export default function Hero() {
 
     const slides = [
         {
-            image: process.env.NEXT_PUBLIC_CDN_URL + "patio.jpeg",
+            image: process.env.NEXT_PUBLIC_CDN_URL + "riad_2.jpg",
+        },
+        {
+            image: process.env.NEXT_PUBLIC_CDN_URL + "riad_bougies.jpg",
         },
         {
             image: process.env.NEXT_PUBLIC_CDN_URL + "Zp5UWh5LeNNTxWv-_IMAGESLIDERYAZID1.avif",
@@ -20,13 +23,13 @@ export default function Hero() {
             image: process.env.NEXT_PUBLIC_CDN_URL + "Zp5UYx5LeNNTxWwJ_IMAGESLIDERYAZID9.avif",
         },
         {
-            image: process.env.NEXT_PUBLIC_CDN_URL + "rooftop.jpeg",
+            image: process.env.NEXT_PUBLIC_CDN_URL + "DSCF0307.jpg",
         },
         {
             image: process.env.NEXT_PUBLIC_CDN_URL + "Zp5UXx5LeNNTxWwE_IMAGESLIDERYAZID5.avif",
         },
         {
-            image: process.env.NEXT_PUBLIC_CDN_URL + "Rectangle 8.png",
+            image: process.env.NEXT_PUBLIC_CDN_URL + "villa.webp"
         },
         {
             image: process.env.NEXT_PUBLIC_CDN_URL + "room.jpeg",
@@ -49,7 +52,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative h-[55vh] w-full overflow-hidden">
+        <section className="relative h-[100vh] w-full overflow-hidden">
             {slides.map((slide, index) => (
                 <div
                     key={index}
@@ -69,7 +72,7 @@ export default function Hero() {
             ))}
 
             <div className="absolute inset-0 bg-black/20"></div>
-            
+
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 flex gap-3">
                 {slides.map((_, index) => (
                     <button
